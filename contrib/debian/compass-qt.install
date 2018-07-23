@@ -1,0 +1,6 @@
+usr/local/bin/compass-qt usr/bin
+share/pixmaps/compass32.xpm usr/share/pixmaps
+share/pixmaps/compass16.xpm usr/share/pixmaps
+share/pixmaps/compass128.png usr/share/pixmaps
+debian/compass-qt.desktop usr/share/applications
+debian/compass-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,22 @@
+[Unit]
+Description=Compass's distributed currency daemon
+After=network.target
+
+[Service]
+User=compass
+Group=compass
+
+Type=forking
+PIDFile=/var/lib/compassd/compassd.pid
+ExecStart=/usr/bin/compassd -daemon -pid=/var/lib/compassd/compassd.pid \
+-conf=/etc/compass/compass.conf -datadir=/var/lib/compassd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

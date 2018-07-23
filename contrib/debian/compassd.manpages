@@ -1,0 +1,3 @@
+debian/manpages/compassd.1
+debian/manpages/compass.conf.5
+debian/manpages/compass-cli.1
